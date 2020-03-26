@@ -38,7 +38,15 @@ namespace WX.MicroService.Serviceinstance.Controllers
         public IEnumerable<User> Get()
         {
             Console.WriteLine($"This is {this._iConfiguration["port"]} invoke");
-            return _iuserService.UserAll();
+            return _iuserService.UserAll().Select(u=> new Model.User() { 
+            Id=u.Id,
+            Account=u.Account,
+            Name=u.Name,
+            Role=$"{this._iConfiguration["ip"]}:{this._iConfiguration["port"]}",
+            Email=u.Email,
+            LoginTime=u.LoginTime,
+            Password=u.Password
+            });
         }
     }
 }

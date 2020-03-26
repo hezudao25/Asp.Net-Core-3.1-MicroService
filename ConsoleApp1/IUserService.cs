@@ -9,5 +9,11 @@ namespace WX.MicroService.Interface
         User FindUser(int id);
 
         IEnumerable<User> UserAll();
+        /// <summary>
+        /// 用户管理
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        bool IsValid(LoginRequestDTO req);
     }
 }

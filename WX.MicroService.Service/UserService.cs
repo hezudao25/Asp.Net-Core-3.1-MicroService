@@ -50,6 +50,12 @@ namespace WX.MicroService.Service
         public IEnumerable<User> UserAll()
         {
             return this._UserList;
-        }       
+        }
+
+        //模拟测试，默认都是人为验证有效
+        public bool IsValid(LoginRequestDTO req)
+        {
+            return true;
+        }
     }
 }

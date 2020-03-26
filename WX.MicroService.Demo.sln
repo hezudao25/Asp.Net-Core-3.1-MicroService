@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.Interface",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.Service", "WX.MicroService.Service\WX.MicroService.Service.csproj", "{80AD518F-3E0B-4022-B242-3440D2F3B56C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WX.MicroService.Serviceinstance", "WX.MicroService.Serviceinstance\WX.MicroService.Serviceinstance.csproj", "{47392B3C-0F41-4AD8-B522-CE9022AE80B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.Serviceinstance", "WX.MicroService.Serviceinstance\WX.MicroService.Serviceinstance.csproj", "{47392B3C-0F41-4AD8-B522-CE9022AE80B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WX.MicroService.GateWayDemo", "WX.MicroService.GateWayDemo\WX.MicroService.GateWayDemo.csproj", "{09AA57F7-91BE-4F1E-B435-C197F92613BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{47392B3C-0F41-4AD8-B522-CE9022AE80B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47392B3C-0F41-4AD8-B522-CE9022AE80B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47392B3C-0F41-4AD8-B522-CE9022AE80B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09AA57F7-91BE-4F1E-B435-C197F92613BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AA57F7-91BE-4F1E-B435-C197F92613BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AA57F7-91BE-4F1E-B435-C197F92613BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AA57F7-91BE-4F1E-B435-C197F92613BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
