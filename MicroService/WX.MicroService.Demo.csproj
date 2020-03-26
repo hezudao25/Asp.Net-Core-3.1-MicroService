@@ -15,6 +15,10 @@
     <ProjectReference Include="..\WX.MicroService.Service\WX.MicroService.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\image\" />
+  </ItemGroup>
+
 
 
 </Project>
