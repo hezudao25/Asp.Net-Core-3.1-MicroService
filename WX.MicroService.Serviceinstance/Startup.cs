@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using WX.MicroService.Interface;
 using WX.MicroService.Service;
+using WX.MicroService.Serviceinstance.Utility;
 
 namespace WX.MicroService.Serviceinstance
 {
@@ -39,7 +40,7 @@ namespace WX.MicroService.Serviceinstance
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
@@ -49,6 +50,9 @@ namespace WX.MicroService.Serviceinstance
             {
                 endpoints.MapControllers();
             });
+
+            // 执行一次，注册 调用consul
+            this.Configuration.ConsulRegist();
         }
     }
 }

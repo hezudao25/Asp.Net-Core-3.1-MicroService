@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +14,10 @@ namespace WX.MicroService.Serviceinstance
     {
         public static void Main(string[] args)
         {
+           new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddCommandLine(args) // 支持命令行参数 --port
+                .Build();
             CreateHostBuilder(args).Build().Run();
         }
 
