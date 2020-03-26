@@ -11,3 +11,6 @@ consul 总结：
 consul 下载地址：https://www.consul.io/downloads.html
 命令：consul agent -dev
 
+
+![Image text](https://raw.githubusercontent.com/hezudao25/MicroService/master/MicroService/wwwroot/image/2.0.png)
+
