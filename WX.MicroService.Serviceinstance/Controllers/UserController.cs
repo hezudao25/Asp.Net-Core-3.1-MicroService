@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using WX.MicroService.Interface;
+using WX.MicroService.Model;
+
+namespace WX.MicroService.Serviceinstance.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
+    {
+        private readonly ILogger<UserController> _logger;
+        private readonly IUserService _iuserService = null;
+
+        public UserController(ILogger<UserController> logger, IUserService userService)
+        {
+            this._logger = logger;
+            this._iuserService = userService;
+        }
+
+        [HttpGet]
+        [Route("Get")]
+        public User Get(int id)
+        {
+            return this._iuserService.FindUser(id);
+        }
+
+        [HttpGet]
+        [Route("All")]
+        public IEnumerable<User> Get()
+        {
+            return _iuserService.UserAll();
+        }
+    }
+}

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp1\WX.MicroService.Interface.csproj" />
+    <ProjectReference Include="..\WX.MicroService.Model\WX.MicroService.Model.csproj" />
+    <ProjectReference Include="..\WX.MicroService.Service\WX.MicroService.Service.csproj" />
+  </ItemGroup>
+
+
+</Project>
