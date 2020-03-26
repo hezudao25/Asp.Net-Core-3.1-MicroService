@@ -11,6 +11,7 @@ consul 总结：
 consul 下载地址：https://www.consul.io/downloads.html
 命令：consul agent -dev
 
+aspnet core 3.1 微服务构架2.0
 
 Ocelot + polly (GateWay网关)
 
