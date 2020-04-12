@@ -7,8 +7,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WX.MicroService.GateWayDemo
+namespace Zhaoxi.MicroService.AuthenticationCenter
 {
+    /// <summary>
+    /// ¿ÕµÄWebApi
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
@@ -17,10 +20,7 @@ namespace WX.MicroService.GateWayDemo
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args).ConfigureAppConfiguration(conf =>
-            {
-                conf.AddJsonFile("configuration.json", optional: false, reloadOnChange: true);
-            })
+            Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

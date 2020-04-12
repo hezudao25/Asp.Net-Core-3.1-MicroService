@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.Service", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.Serviceinstance", "WX.MicroService.Serviceinstance\WX.MicroService.Serviceinstance.csproj", "{47392B3C-0F41-4AD8-B522-CE9022AE80B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WX.MicroService.GateWayDemo", "WX.MicroService.GateWayDemo\WX.MicroService.GateWayDemo.csproj", "{09AA57F7-91BE-4F1E-B435-C197F92613BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.GateWayDemo", "WX.MicroService.GateWayDemo\WX.MicroService.GateWayDemo.csproj", "{09AA57F7-91BE-4F1E-B435-C197F92613BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.IdentityServer", "WX.MicroService.IdentityServe\WX.MicroService.IdentityServer.csproj", "{4A975E1A-23A3-4C05-AEA9-B78B18DDA318}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX.MicroService.ServiceInstanceAuthen", "WX.MicroService.ServiceInstanceAuthen\WX.MicroService.ServiceInstanceAuthen.csproj", "{154E4DAC-4346-467B-83B6-5D4ABCD5A7A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{09AA57F7-91BE-4F1E-B435-C197F92613BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09AA57F7-91BE-4F1E-B435-C197F92613BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09AA57F7-91BE-4F1E-B435-C197F92613BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A975E1A-23A3-4C05-AEA9-B78B18DDA318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A975E1A-23A3-4C05-AEA9-B78B18DDA318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A975E1A-23A3-4C05-AEA9-B78B18DDA318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A975E1A-23A3-4C05-AEA9-B78B18DDA318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154E4DAC-4346-467B-83B6-5D4ABCD5A7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154E4DAC-4346-467B-83B6-5D4ABCD5A7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154E4DAC-4346-467B-83B6-5D4ABCD5A7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154E4DAC-4346-467B-83B6-5D4ABCD5A7A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
